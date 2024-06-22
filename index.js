@@ -16,7 +16,7 @@ app.use(express.json());
 
 api_key= process.env.PLANTS_API_KEY;
 crop_api_key= process.env.CROP_HEALTH_API_KEY;
-const port = process.env.PORT  ;
+
 
 
 /////////////////////test USAGE INFO.
@@ -299,8 +299,9 @@ app.get("/crop-health-retrieve/:access_token", async (req, res) => {
 ////////////////////////////////////
 //local server
 
-app.listen(port ,()=>
+app.listen(3000 || process.env.PORT ,()=>
 {
-    console.log(`Server listening at http://localhost:${port}`);
+    //console.log(`Server listening at http://localhost:${port}`);
+    console.log('Server is running ...');
 })
 
