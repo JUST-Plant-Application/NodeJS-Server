@@ -7,7 +7,7 @@ const fetch =require('node-fetch');
 const fs = require('fs');
 const multer = require('multer');
 const path = require('path');
-const serviceAccount = require('./google-services.json'); 
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: '1gb' }));
